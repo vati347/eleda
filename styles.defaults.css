@@ -1,0 +1,282 @@
+:root {
+  /* --common-heading-color: rgb(48, 104, 162); */
+  --common-heading-color: #0cf;
+  /* --common-description-color: rgb(243, 204, 62); */
+  --common-description-color: #0cf;
+  --lightning: rgb(243, 204, 62);
+
+  --header-box-shadow-underline: rgba(48, 104, 162, 0.6);
+  --header-bg-color: rgba(30, 38, 46, 0.92);
+  --header-bg-color-fill: rgba(30, 38, 46, 1);
+  --header-border-bottom: rgba(0, 0, 0, 0.4);
+
+  --logo-svg-color: rgba(243, 204, 62, 1);
+
+  /* --navigation-link-color: rgb(48, 104, 162);
+  --navigation-link-active-color: rgb(243, 204, 62);
+  --navigation-link-hover-color: rgb(243, 204, 62); */
+
+  --navigation-link-color: #0cf;
+  --navigation-link-active-color: rgb(6, 131, 214);
+  --navigation-link-hover-color: #0cf;
+
+  /* --hamburger-icon-color: rgb(243, 204, 62); */
+  --hamburger-icon-color: #0cf;
+  --mobile-menu-border-color: rgb(48, 104, 162);
+
+  --hamburger-icon-clicked-glow:
+    0 0 5px rgba(0, 204, 255, 1),
+    0 0 10px rgba(0, 204, 255, 0.9),
+    0 0 20px rgba(0, 204, 255, 0.8),
+    0 0 40px rgba(0, 204, 255, 0.6);
+
+  --bxs-card-bg: rgba(20, 30, 45, 0.75);
+  --bxs-card-bg-mobile: rgba(5, 39, 71, 0.85);
+  --bxs-card-box-shadow: rgba(0, 0, 0, 0.15);
+  --bxs-card-border: rgba(255, 255, 255, 0.15);
+
+  /* --contacts-personal-info-text: rgb(243, 204, 62); */
+  --contacts-personal-info-text: #0cf;
+
+  /* --contacts-name-underline: rgb(243, 204, 62); */
+  --contacts-name-underline: #0cf;
+
+  /* --contacts-social-border: rgb(48, 104, 162); */
+  --contacts-social-border: rgba(11, 192, 192, 0.74);
+
+  /* --contacts-cta-button-text: rgb(33, 42, 48); */
+  --contacts-cta-button-text: #f0f0f0;
+
+  /* --contacts-cta-button-bg: rgb(243, 204, 62); */
+  /* --contacts-cta-button-bg: rgb(23, 65, 129); */
+  --contacts-cta-button-bg: rgb(6, 131, 214);
+
+  /* --contacts-cta-button-dropshadow-glow: rgba(243, 204, 62, 1); */
+  --contacts-cta-button-dropshadow-glow: rgba(0, 204, 255, 0.7);
+
+  --qualif-patch-fill: #0cf;
+  --qualif-separator-boxshadow-underline: rgba(255, 255, 255, 0.288);
+  --qualif-header: #0cf;
+  --qualif-text: #0cf;
+
+  --services-closed-bg-start: rgba(0, 0, 0, 0);
+  --services-opened-bg-end: rgba(0, 0, 0, 0.4);
+  --services-opened-border: rgb(48, 104, 162);
+  --services-opened-boxshadow: rgba(0, 0, 0, 0.2);
+
+  /* --service-text-and-gear: rgb(243, 204, 62); */
+  --service-text-and-gear: #0cf;
+
+  /* --service-text-and-gear-underline-start: rgb(243, 204, 62); */
+  --service-text-and-gear-underline-start: #0cf;
+
+  /* --service-text-and-gear-underline-end: rgb(95, 162, 172);
+  --service-gear-hover: rgb(95, 162, 172);
+  --service-expanded-color: rgb(95, 162, 172);
+  --service-expanded-gear-color: rgb(95, 162, 172); */
+
+  --service-text-and-gear-underline-end: #0cf;
+  --service-gear-hover: #0cf;
+  --service-expanded-color: #0cf;
+  --service-expanded-gear-color: #0cf;
+
+  --section-heading-size-pc: 2rem;
+  --section-heading-size-m: 3rem;
+  --section-desc-size-pc: 1.5rem;
+  --section-desc-size-m: 2rem;
+}
+
+
+
+/* :root {
+  --common-heading-color: rgb(58, 123, 183);
+  --common-description-color: rgb(243, 204, 62);
+  --lightning: rgb(243, 204, 62);
+
+  --header-box-shadow-underline: rgba(58, 123, 183, 0.6);
+  --header-bg-color: rgba(33, 42, 48, 0.92);
+  --header-border-bottom: rgba(0, 0, 0, 0.4);
+
+  --logo-svg-color: rgba(243, 204, 62, 1);
+
+  --navigation-link-color: rgb(58, 123, 183);
+  --navigation-link-active-color: rgb(243, 204, 62);
+  --navigation-link-hover-color: rgb(243, 204, 62);
+
+  --hamburger-icon-color: rgb(243, 204, 62);
+  --mobile-menu-border-color: rgb(58, 123, 183);
+
+  --hamburger-icon-clicked-glow:
+    0 0 5px rgba(243, 204, 62, 1),
+    0 0 10px rgba(243, 204, 62, 0.9),
+    0 0 20px rgba(243, 204, 62, 0.8),
+    0 0 40px rgba(243, 204, 62, 0.6);
+
+  --bxs-card-bg: rgba(5, 39, 71, 0.3);
+  --bxs-card-bg-mobile: rgba(5, 39, 71, 0.85);
+  --bxs-card-box-shadow: rgba(0, 0, 0, 0.15);
+  --bxs-card-border: rgba(255, 255, 255, 0.2);
+
+  --contacts-personal-info-text: rgb(243, 204, 62);
+  --contacts-name-underline: rgb(243, 204, 62);
+  --contacts-social-border: rgb(58, 123, 183);
+  --contacts-cta-button-text: rgb(33, 42, 48);
+  --contacts-cta-button-bg: rgb(243, 204, 62);
+  --contacts-cta-button-dropshadow-glow: rgba(243, 204, 62, 1);
+
+  --qualif-patch-fill: rgb(95, 162, 172);
+  --qualif-separator-boxshadow-underline: rgba(255, 255, 255, 0.1);
+  --qualif-header: rgb(95, 162, 172);
+  --qualif-text: rgb(58, 123, 183);
+
+  --services-closed-bg-start: rgba(0, 0, 0, 0);
+  --services-opened-bg-end: rgba(0, 0, 0, 0.4);
+  --services-opened-border: rgb(58, 123, 183);
+  --services-opened-boxshadow: rgba(0, 0, 0, 0.2);
+  --service-text-and-gear: rgb(243, 204, 62);
+  --service-text-and-gear-underline-start: rgb(243, 204, 62);
+  --service-text-and-gear-underline-end: rgb(95, 162, 172);
+  --service-gear-hover: rgb(95, 162, 172);
+  --service-expanded-color: rgb(95, 162, 172);
+  --service-expanded-gear-color: rgb(95, 162, 172);
+
+  --section-heading-size-pc: 2rem;
+  --section-heading-size-m: 3rem;
+  --section-desc-size-pc: 1.5rem;
+  --section-desc-size-m: 2rem;
+} */
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  position: relative;
+  min-height: 100%;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('v1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: -1;
+}
+
+
+
+body {
+  margin-bottom: calc(60px + 1.5rem);
+  z-index: 1;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 60px;
+  border-top: 2px solid var(--header-border-bottom);
+  background: var(--header-bg-color);
+  z-index: 2;
+}
+
+
+footer div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+footer div p {
+  color: var(--common-description-color);
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+.heading {
+  color: var(--common-heading-color);
+  font-weight: 800;
+}
+
+.description {
+  color: var(--common-description-color);
+  font-weight: 500;
+}
+
+.bi.bi-lightning-charge-fill {
+  color: var(--lightning);
+  font-size: 3rem;
+}
+
+.centered {
+  text-align: center;
+}
+
+.justified {
+  text-align: justify;
+}
+
+.me-2 {
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 992px) {
+
+  .bi.bi-lightning-charge-fill {
+    color: var(--lightning);
+    font-size: 3rem;
+  }
+
+
+}
+
+@media (max-width: 435px) {
+
+  html {
+    font-size: clamp(10px, 3vw, 16px);
+  }
+
+  .background {
+    width: 500vw;
+    height: 500vh;
+  }
+
+}
