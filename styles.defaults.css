@@ -10,6 +10,8 @@
   --header-bg-color-fill: rgba(30, 38, 46, 1);
   --header-border-bottom: rgba(0, 0, 0, 0.4);
 
+  --header-tel-color: #007BFF;
+
   --logo-svg-color: rgba(243, 204, 62, 1);
 
   /* --navigation-link-color: rgb(48, 104, 162);
@@ -160,9 +162,9 @@ body {
   overflow-x: hidden;
 }
 
+
 html {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Poppins', sans-serif;
   position: relative;
   min-height: 100%;
 }
@@ -268,7 +270,7 @@ ul li a {
 
 }
 
-@media (max-width: 435px) {
+@media (max-width: 515px) {
 
   html {
     font-size: clamp(10px, 3vw, 16px);

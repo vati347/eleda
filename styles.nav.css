@@ -11,7 +11,7 @@ header {
     border-bottom: 2px solid var(--header-border-bottom);
     padding: 1rem 0;
     z-index: 999;
-    max-height: 80px;
+    max-height: 100px;
 }
 
 header.filled {
@@ -55,6 +55,27 @@ header .logo-area .logo-desc {
     margin-right: 1rem;
 }
 
+.logo-desc.tel {
+    pointer-events: all;
+    color: #FF5722;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(255, 87, 34, 0.8), 0 0 10px rgba(255, 87, 34, 0.6);
+    animation: pulseTel 2s infinite ease-in-out;
+}
+
+@keyframes pulseTel {
+
+    0%,
+    100% {
+        transform: scale(1);
+        text-shadow: 0 0 5px rgba(255, 87, 34, 0.8), 0 0 10px rgba(255, 87, 34, 0.6);
+    }
+
+    50% {
+        transform: scale(1.05);
+        text-shadow: 0 0 10px rgba(255, 87, 34, 1), 0 0 20px rgba(255, 87, 34, 0.8);
+    }
+}
 
 .nbar-wrapper {
     position: absolute;
@@ -79,7 +100,7 @@ header.filled .nbar-wrapper {
 
     text-align: center;
     cursor: pointer;
-    
+
 }
 
 .nav-link {
@@ -147,6 +168,9 @@ i.bi.bi-list.expanded~.nbar-wrapper {
         font-size: clamp(1.5rem, 2.2vw, 2rem);
     }
 
+    .logo-desc.tel {
+        pointer-events: none;
+    }
 
     i.bi.bi-list {
         display: none;

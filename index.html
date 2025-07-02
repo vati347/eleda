@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Villanyszerelés</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles.defaults.css">
@@ -18,7 +20,11 @@
             <div class="logo-desc-wrapper">
                 <h3 class="logo-desc heading">Vass Gábor |</h3>
                 <h3 class="logo-desc heading">Villámvédelmi felülvizsgáló |</h3>
-                <h3 class="logo-desc heading tel">+36-30/123-4567</h3>
+                <h3 class="logo-desc heading tel">
+                    <a href="tel:+36301234567" style="text-decoration: none; color: inherit;">
+                        +36-30/123-4567
+                    </a>
+                </h3>
             </div>
         </div>
 
@@ -64,6 +70,93 @@
                 </div>
             </div>
         </section>
+        <section class="services bgd-bxs-card">
+            <h3 class="heading">
+                Szolgáltatások
+            </h3>
+            <div class="services-list-element">
+                <h5 class="service flextest"><img src="./images/icons/general-electric.png" alt="Villámvédelem ikon"
+                        class="service-icon">
+                    <span>Villanyszerelés</span>
+                </h5>
+                <p class="hiddensection description">
+                    Komplett villanyszerelési munkák lakossági és ipari környezetben, beleértve a lakáselosztók
+                    szerelését, a földelési rendszerek kialakítását és a hálózati kiépítést.
+                </p>
+            </div>
+            <div class="services-list-element">
+                <h5 class="service flextest"><img src="./images/icons/electric-touch.png" alt="Villámvédelem ikon"
+                        class="service-icon">
+                    <span>Villamos biztonsági felülvizsgálat</span>
+                </h5>
+                <p class="hiddensection description">
+                    Az elektromos rendszerek időszakos ellenőrzése jogszabályi előírások alapján kötelező, amelyet az
+                    OTSZ (Országos Tűzvédelmi Szabályzat), valamint a NFM rendelet (40/2017. (XII. 4.) NGM rendelet)
+                    szabályoz. A vizsgálat célja az érintésvédelem, túlfeszültség elleni védelem és a földelési rendszer
+                    megfelelőségének biztosítása.
+                </p>
+            </div>
+            <div class="services-list-element">
+                <h5 class="service flextest"><img src="./images/icons/lightning-protection.png" alt="Villámvédelem ikon"
+                        class="service-icon">
+                    <span>Villámvédelmi felülvizsgálat</span>
+                </h5>
+                <p class="hiddensection description">
+                    A villámvédelmi rendszerek ellenőrzése a meglévő villámhárítók, levezetők és földelések állapotának
+                    vizsgálatával történik, biztosítva az épületek és elektromos rendszerek védelmét villámcsapás
+                    esetén.
+
+                </p>
+            </div>
+            <div class="services-list-element">
+                <h5 class="service flextest"><img src="./images/icons/explosion-review.png" alt="Villámvédelem ikon"
+                        class="service-icon">
+                    <span>Robbanásveszélyes helyek felülvizsgálata</span>
+                </h5>
+                <p class="hiddensection description">
+                    Bizonyos ipari területeken különleges szabványoknak kell megfelelni az elektromos berendezések
+                    kialakításakor. A felülvizsgálat során biztosítom, hogy az elektromos hálózat és berendezések
+                    megfeleljenek az ATEX előírásoknak, minimálisra csökkentve a gyújtószikra és statikus
+                    elektromosság kockázatát.
+                </p>
+            </div>
+            <div class="services-list-element">
+                <h5 class="service flextest"><img src="./images/icons/report-writing.png" alt="Villámvédelem ikon"
+                        class="service-icon">
+                    <span>Jegyzőkönyv készítés</span>
+                </h5>
+                <p class="hiddensection description">
+                    Minden felülvizsgálati és szerelési munkáról pontos és hivatalos jegyzőkönyvet készítek, amely
+                    megfelel a szabványoknak és jogszabályi előírásoknak.
+                </p>
+            </div>
+        </section>
+        <section class="qualif bgd-bxs-card">
+            <h3 class="heading">
+                <!-- <i class="bi bi-lightning-charge-fill"></i> -->
+                Képzettségeim
+            </h3>
+            <div class="qualif-list">
+                <div class="qualif-list-element">
+                    <h5 class="qualification-heading">
+                        <i class="bi bi-patch-check-fill"></i>
+                        Villanyszerelő
+                    </h5>
+                    <p class="qualification-desc">
+                        Lakossági és ipari villamossági berendezések szerelése, karbantartása és telepítése.
+                    </p>
+                </div>
+                <div class="qualif-list-element">
+                    <h5 class="qualification-heading">
+                        <i class="bi bi-patch-check-fill"></i>
+                        Villámvédelmi felülvizsgáló
+                    </h5>
+                    <p class="qualification-desc">
+                        Villámvédelmi rendszerek felülvizsgálata, szabványok szerinti ellenőrzése lakossági és ipari
+                        környezetben.</p>
+                </div>
+            </div>
+        </section>
         <section class="contacts bgd-bxs-card">
             <h3 class="heading">
                 <!-- <i class="bi bi-lightning-charge-fill"></i> -->
@@ -80,11 +173,22 @@
                 <div class="pcontacts-g">
                     <div class="pinfo-g pinfo-d">
                         <i class="bi bi-telephone"></i>
-                        <p>+36-30/123-4567</p>
+
+                        <!-- Clickable only on mobile -->
+                        <a href="tel:+36301234567" class="mobile-tel">
+                            +36-30/123-4567
+                        </a>
+
+                        <!-- Non-clickable on desktop -->
+                        <p class="desktop-tel">
+                            +36-30/123-4567
+                        </p>
                     </div>
                     <div class="pinfo-g pinfo-d">
                         <i class="bi bi-envelope"></i>
-                        <p>vassgabor@electroleda.hu</p>
+                        <a href="mailto:vassgabor@electroleda.hu" class="mobile-email">
+                            vassgabor@electroleda.hu
+                        </a>
                     </div>
                     <div class="pinfo-g pinfo-d">
                         <i class="bi bi-geo-alt"></i>
@@ -126,89 +230,6 @@
             </div>
             <div class="cont-btn">
                 Vegye fel a kapcsolatot!
-            </div>
-        </section>
-        <section class="qualif bgd-bxs-card">
-            <h3 class="heading">
-                <!-- <i class="bi bi-lightning-charge-fill"></i> -->
-                Képzettségeim
-            </h3>
-            <div class="qualif-list">
-                <div class="qualif-list-element">
-                    <h5 class="qualification-heading">
-                        <i class="bi bi-patch-check-fill"></i>
-                        Villanyszerelő
-                    </h5>
-                    <p class="qualification-desc">
-                        Lakossági és ipari villamossági berendezések szerelése, karbantartása és telepítése.
-                    </p>
-                </div>
-                <div class="qualif-list-element">
-                    <h5 class="qualification-heading">
-                        <i class="bi bi-patch-check-fill"></i>
-                        Villámvédelmi felülvizsgáló
-                    </h5>
-                    <p class="qualification-desc">
-                        Villámvédelmi rendszerek felülvizsgálata, szabványok szerinti ellenőrzése lakossági és ipari
-                        környezetben.</p>
-                </div>
-            </div>
-        </section>
-        <section class="services bgd-bxs-card">
-            <h3 class="heading">
-                <!-- <i class="bi bi-lightning-charge-fill"></i> -->
-                Szolgáltatások
-            </h3>
-            <div class="services-list-element opened">
-                <h5 class="service expand underline"><i class="bi bi-gear-fill"></i>
-                    Villanyszerelés
-                </h5>
-                <p class="hiddensection description shown">
-                    Komplett villanyszerelési munkák lakossági és ipari környezetben, beleértve a lakáselosztók
-                    szerelését, a földelési rendszerek kialakítását és a hálózati kiépítést.
-                </p>
-            </div>
-            <div class="services-list-element">
-                <h5 class="service"><i class="bi bi-gear-fill"></i>
-                    Villamos biztonsági felülvizsgálat
-                </h5>
-                <p class="hiddensection description">
-                    Az elektromos rendszerek időszakos ellenőrzése jogszabályi előírások alapján kötelező, amelyet az
-                    OTSZ (Országos Tűzvédelmi Szabályzat), valamint a NFM rendelet (40/2017. (XII. 4.) NGM rendelet)
-                    szabályoz. A vizsgálat célja az érintésvédelem, túlfeszültség elleni védelem és a földelési rendszer
-                    megfelelőségének biztosítása.
-                </p>
-            </div>
-            <div class="services-list-element">
-                <h5 class="service"><i class="bi bi-gear-fill"></i>
-                    Villámvédelmi felülvizsgálat
-                </h5>
-                <p class="hiddensection description">
-                    A villámvédelmi rendszerek ellenőrzése a meglévő villámhárítók, levezetők és földelések állapotának
-                    vizsgálatával történik, biztosítva az épületek és elektromos rendszerek védelmét villámcsapás
-                    esetén.
-
-                </p>
-            </div>
-            <div class="services-list-element">
-                <h5 class="service"><i class="bi bi-gear-fill"></i>
-                    Robbanásveszélyes helyek felülvizsgálata
-                </h5>
-                <p class="hiddensection description">
-                    Bizonyos ipari területeken különleges szabványoknak kell megfelelni az elektromos berendezések
-                    kialakításakor. A felülvizsgálat során biztosítom, hogy az elektromos hálózat és berendezések
-                    megfeleljenek az ATEX előírásoknak, minimálisra csökkentve a gyújtószikra és statikus
-                    elektromosság kockázatát.
-                </p>
-            </div>
-            <div class="services-list-element">
-                <h5 class="service"><i class="bi bi-gear-fill"></i>
-                    Jegyzőkönyv készítés
-                </h5>
-                <p class="hiddensection description">
-                    Minden felülvizsgálati és szerelési munkáról pontos és hivatalos jegyzőkönyvet készítek, amely
-                    megfelel a szabványoknak és jogszabályi előírásoknak.
-                </p>
             </div>
         </section>
     </div>
