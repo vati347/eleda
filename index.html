@@ -5,22 +5,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Villanyszerelés</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Inter&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles.defaults.css">
     <link rel="stylesheet" href="styles.nav.css">
+    <link rel="stylesheet" href="styles.welcome.css">
+    <link rel="stylesheet" href="styles.services.css">
+    <link rel="stylesheet" href="styles.contacts.css">
 </head>
 
 <body>
-    <div class="background"></div>
     <header>
         <div class="logo-area">
             <div class="logo-desc-wrapper">
-                <h3 class="logo-desc heading">Vass Gábor |</h3>
-                <h3 class="logo-desc heading">Villámvédelmi felülvizsgáló |</h3>
-                <h3 class="logo-desc heading tel">
+                <h3 class="logo-desc">Vass Gábor</h3>
+                <h3 class="logo-desc tel">
                     <a href="tel:+36301234567" style="text-decoration: none; color: inherit;">
                         +36-30/123-4567
                     </a>
@@ -47,16 +49,17 @@
 
     <div class="grid-container">
         <section class="welcome bgd-bxs-card">
-            <h3 class="heading">
-                <!-- <i class="bi bi-lightning-charge-fill"></i> -->
+            <!-- <h3 class="heading">
                 Villanyszerelés biztonsággal és precizitással
-            </h3>
+            </h3> -->
             <div class="welcome-message">
                 <div class="centered description">
-                    <strong>Üdvözlöm!</strong>
+                    <h3>
+                        <strong>Üdvözlöm!</strong>
+                    </h3>
                 </div>
                 <br>
-                <div class="justified description">
+                <div class="justified description  testszoveg">
                     <strong>
                         Vass Gábor vagyok.
                     </strong>
@@ -69,100 +72,87 @@
                     hozzáállással.
                 </div>
             </div>
+            <div class="phone-only">
+                <div class="welcome-contacts-wrapper">
+                    <a href="tel:+36123456789" class="welcome-cont-btn">
+                        <i class="bi bi-telephone"></i>
+                        Keressen telefonon!
+                        <i class="bi bi-hand-index-thumb"></i></a>
+
+                    <a href="mailto:info@example.com" class="welcome-cont-btn">
+                        <i class="bi bi-envelope"></i>
+                        Keressen e-mailben!
+                        <i class="bi bi-hand-index-thumb"></i></a>
+                </div>
+            </div>
         </section>
         <section class="services bgd-bxs-card">
             <h3 class="heading">
                 Szolgáltatások
             </h3>
-            <div class="services-list-element opened">
-                <h5 class="service flextest expand underline"><img src="./images/icons/general-electric.png" alt="Villámvédelem ikon"
-                        class="service-icon">
-                    <span>Villanyszerelés</span>
-                </h5>
-                <p class="hiddensection description shown">
-                    Komplett villanyszerelési munkák lakossági és ipari környezetben, beleértve a lakáselosztók
-                    szerelését, a földelési rendszerek kialakítását és a hálózati kiépítést.
-                </p>
-            </div>
-            <div class="services-list-element">
-                <h5 class="service flextest"><img src="./images/icons/electric-touch.png" alt="Villámvédelem ikon"
-                        class="service-icon">
-                    <span>Villamos biztonsági felülvizsgálat</span>
-                </h5>
-                <p class="hiddensection description">
-                    Az elektromos rendszerek időszakos ellenőrzése jogszabályi előírások alapján kötelező, amelyet az
-                    OTSZ (Országos Tűzvédelmi Szabályzat), valamint a NFM rendelet (40/2017. (XII. 4.) NGM rendelet)
-                    szabályoz. A vizsgálat célja az érintésvédelem, túlfeszültség elleni védelem és a földelési rendszer
-                    megfelelőségének biztosítása.
-                </p>
-            </div>
-            <div class="services-list-element">
-                <h5 class="service flextest"><img src="./images/icons/lightning-protection.png" alt="Villámvédelem ikon"
-                        class="service-icon">
-                    <span>Villámvédelmi felülvizsgálat</span>
-                </h5>
-                <p class="hiddensection description">
-                    A villámvédelmi rendszerek ellenőrzése a meglévő villámhárítók, levezetők és földelések állapotának
-                    vizsgálatával történik, biztosítva az épületek és elektromos rendszerek védelmét villámcsapás
-                    esetén.
-
-                </p>
-            </div>
-            <div class="services-list-element">
-                <h5 class="service flextest"><img src="./images/icons/explosion-review.png" alt="Villámvédelem ikon"
-                        class="service-icon">
-                    <span>Robbanásveszélyes helyek felülvizsgálata</span>
-                </h5>
-                <p class="hiddensection description">
-                    Bizonyos ipari területeken különleges szabványoknak kell megfelelni az elektromos berendezések
-                    kialakításakor. A felülvizsgálat során biztosítom, hogy az elektromos hálózat és berendezések
-                    megfeleljenek az ATEX előírásoknak, minimálisra csökkentve a gyújtószikra és statikus
-                    elektromosság kockázatát.
-                </p>
-            </div>
-            <div class="services-list-element">
-                <h5 class="service flextest"><img src="./images/icons/report-writing.png" alt="Villámvédelem ikon"
-                        class="service-icon">
-                    <span>Jegyzőkönyv készítés</span>
-                </h5>
-                <p class="hiddensection description">
-                    Minden felülvizsgálati és szerelési munkáról pontos és hivatalos jegyzőkönyvet készítek, amely
-                    megfelel a szabványoknak és jogszabályi előírásoknak.
-                </p>
-            </div>
-        </section>
-        <section class="qualif bgd-bxs-card">
-            <h3 class="heading">
-                <!-- <i class="bi bi-lightning-charge-fill"></i> -->
-                Képzettségeim
-            </h3>
-            <div class="qualif-list">
-                <div class="qualif-list-element">
-                    <h5 class="qualification-heading">
-                        <i class="bi bi-patch-check-fill"></i>
-                        Villanyszerelő
+            <div class="services-list">
+                <div class="services-list-element">
+                    <h5 class="service flextest"><img src="./images/icons/general-electric.png" alt="Villámvédelem ikon"
+                            class="service-icon">
+                        <span>Villanyszerelés</span>
                     </h5>
-                    <p class="qualification-desc">
-                        Lakossági és ipari villamossági berendezések szerelése, karbantartása és telepítése.
+                    <p class="hiddensection service-description shown">
+                        Komplett villanyszerelési munkák lakossági és ipari környezetben, beleértve a lakáselosztók
+                        szerelését, a földelési rendszerek kialakítását és a hálózati kiépítést.
                     </p>
                 </div>
-                <div class="qualif-list-element">
-                    <h5 class="qualification-heading">
-                        <i class="bi bi-patch-check-fill"></i>
-                        Villámvédelmi felülvizsgáló
+                <div class="services-list-element">
+                    <h5 class="service flextest"><img src="./images/icons/electric-touch.png" alt="Villámvédelem ikon"
+                            class="service-icon">
+                        <span>Villamos biztonsági felülvizsgálat</span>
                     </h5>
-                    <p class="qualification-desc">
-                        Villámvédelmi rendszerek felülvizsgálata, szabványok szerinti ellenőrzése lakossági és ipari
-                        környezetben.</p>
+                    <p class="hiddensection service-description  shown">
+                        Az elektromos rendszerek időszakos ellenőrzése jogszabályi előírások alapján kötelező, amelyet
+                        az
+                        OTSZ (Országos Tűzvédelmi Szabályzat), valamint a NFM rendelet (40/2017. (XII. 4.) NGM rendelet)
+                        szabályoz. A vizsgálat célja az érintésvédelem, túlfeszültség elleni védelem és a földelési
+                        rendszer
+                        megfelelőségének biztosítása.
+                    </p>
+                </div>
+                <div class="services-list-element">
+                    <h5 class="service flextest"><img src="./images/icons/lightning-protection.png"
+                            alt="Villámvédelem ikon" class="service-icon">
+                        <span>Villámvédelmi felülvizsgálat</span>
+                    </h5>
+                    <p class="hiddensection service-description shown">
+                        A villámvédelmi rendszerek ellenőrzése a meglévő villámhárítók, levezetők és földelések
+                        állapotának
+                        vizsgálatával történik, biztosítva az épületek és elektromos rendszerek védelmét villámcsapás
+                        esetén.
+
+                    </p>
+                </div>
+                <div class="services-list-element">
+                    <h5 class="service flextest"><img src="./images/icons/explosion-review.png" alt="Villámvédelem ikon"
+                            class="service-icon">
+                        <span>Robbanásveszélyes helyek felülvizsgálata</span>
+                    </h5>
+                    <p class="hiddensection service-description shown">
+                        Bizonyos ipari területeken különleges szabványoknak kell megfelelni az elektromos berendezések
+                        kialakításakor. A felülvizsgálat során biztosítom, hogy az elektromos hálózat és berendezések
+                        megfeleljenek az ATEX előírásoknak, minimálisra csökkentve a gyújtószikra és statikus
+                        elektromosság kockázatát.
+                    </p>
+                </div>
+                <div class="services-list-element">
+                    <h5 class="service flextest"><img src="./images/icons/report-writing.png" alt="Villámvédelem ikon"
+                            class="service-icon">
+                        <span>Jegyzőkönyv készítés</span>
+                    </h5>
+                    <p class="hiddensection service-description shown">
+                        Minden felülvizsgálati és szerelési munkáról pontos és hivatalos jegyzőkönyvet készítek, amely
+                        megfelel a szabványoknak és jogszabályi előírásoknak.
+                    </p>
                 </div>
             </div>
         </section>
         <section class="contacts bgd-bxs-card">
-            <h3 class="heading">
-                <!-- <i class="bi bi-lightning-charge-fill"></i> -->
-                Elérhetőségeim
-            </h3>
-
             <div class="contacts-maindiv-g">
                 <div class="pinfo-h">
                     <h5>Vass Gábor</h5>
@@ -228,8 +218,16 @@
                     </li>
                 </ul>
             </div>
-            <div class="cont-btn">
-                Vegye fel a kapcsolatot!
+            <div class="contacts-buttons-wrapper">
+                <a href="tel:+36123456789" class="cont-btn">
+                    <i class="bi bi-telephone"></i>
+                    Keressen telefonon!
+                    <i class="bi bi-hand-index-thumb"></i></a>
+
+                <a href="mailto:info@example.com" class="cont-btn">
+                    <i class="bi bi-envelope"></i>
+                    Keressen e-mailben!
+                    <i class="bi bi-hand-index-thumb"></i></a>
             </div>
         </section>
     </div>

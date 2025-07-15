@@ -1,0 +1,44 @@
+.welcome-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.welcome-cont-btn {
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 2rem 0rem;
+  border-radius: 1.25rem;
+  width: 100%;
+  text-align: center;
+  border: 2px solid var(--contacts-cta-button-border);
+  background-color: var(--contacts-cta-button-bg);
+  color: var(--contacts-cta-button-text);
+  margin-top: 2rem;
+
+  text-decoration: none;
+}
+
+
+@media (min-width: 992px) {
+
+  .welcome-message {
+    padding: 1rem 3rem;
+  }
+}
+
+
+
+@media (max-width: 270px) {
+  .welcome-cont-btn i {
+    display: none;
+  }
+}

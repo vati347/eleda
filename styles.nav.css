@@ -47,35 +47,27 @@ header .logo-area .logo-svg {
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 0.25rem;
+    align-items: center;
 }
 
 header .logo-area .logo-desc {
-    font-size: clamp(1.4rem, 3.75vw, 1.5rem);
+    /* font-size: clamp(1.4rem, 3.75vw, 1.5rem); */
     margin-left: 0.5rem;
     margin-right: 1rem;
+    font-family: Roboto;
+    font-size: 2rem;
 }
 
 .logo-desc.tel {
     pointer-events: all;
-    color: #FF5722;
+    color: var(--header-tel-color);
     font-weight: bold;
-    text-shadow: 0 0 5px rgba(255, 87, 34, 0.8), 0 0 10px rgba(255, 87, 34, 0.6);
-    animation: pulseTel 2s infinite ease-in-out;
+    border: 2px solid var(--header-tel-color);
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
-@keyframes pulseTel {
 
-    0%,
-    100% {
-        transform: scale(1);
-        text-shadow: 0 0 5px rgba(255, 87, 34, 0.8), 0 0 10px rgba(255, 87, 34, 0.6);
-    }
-
-    50% {
-        transform: scale(1.05);
-        text-shadow: 0 0 10px rgba(255, 87, 34, 1), 0 0 20px rgba(255, 87, 34, 0.8);
-    }
-}
 
 .nbar-wrapper {
     position: absolute;
@@ -93,14 +85,8 @@ header.filled .nbar-wrapper {
 }
 
 .nbar {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-
     text-align: center;
     cursor: pointer;
-
 }
 
 .nav-link {
@@ -163,10 +149,6 @@ i.bi.bi-list.expanded~.nbar-wrapper {
 
 
 @media (min-width: 992px) {
-
-    header .logo-area .logo-desc {
-        font-size: clamp(1.5rem, 2.2vw, 2rem);
-    }
 
     .logo-desc.tel {
         pointer-events: none;
@@ -253,14 +235,10 @@ i.bi.bi-list.expanded~.nbar-wrapper {
 
 }
 
-@media (max-width: 435px) {
+@media (max-width: 600px) {
 
     header .logo-area .logo-desc {
-        font-size: clamp(1rem, 3.8vw, 2rem);
+        font-size: clamp(1rem, 4.5vw, 2rem);
     }
 
-
-    i.bi.bi-list {
-        font-size: 3rem;
-    }
 }
