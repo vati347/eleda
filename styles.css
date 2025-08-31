@@ -29,3 +29,19 @@
   text-align: center;
   font-size: 1.5rem;
 }
+
+/* Skip link */
+.skip-link { position:absolute; left:-9999px; top:8px; background:#fff; color:#000; padding:0.5rem 0.75rem; border-radius:0.5rem; z-index:10000; }
+.skip-link:focus { left:8px; outline:2px solid var(--navigation-link-active-color); }
+
+/* Sticky call */
+.call-button {
+  font-size: 2rem;
+  position: fixed; bottom: 16px; right: 16px;
+  display: inline-flex; align-items:center; gap:1rem;
+  text-decoration:none; padding:1rem 1.5rem; border-radius:9999px;
+  background: var(--navigation-link-active-color); color:#fff;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25); font-weight:600; z-index: 9999;
+}
+.call-button i { font-size:2rem; }
+@media (min-width: 992px) { .call-button { display:none; } }

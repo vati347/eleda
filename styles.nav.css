@@ -7,7 +7,7 @@ header {
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
     background-color: var(--header-bg-color);
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     border-bottom: 2px solid var(--header-border-bottom);
     padding: 1rem 0;
     z-index: 999;

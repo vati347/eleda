@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="hu-HU">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Villanyszerelés</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Inter&display=swap"
+    <meta name="description"
+        content="Villanyszerelés városi környezetben – gyors hibaelhárítás, új szerelések, karbantartás. Kapcsolat: +36 30 123 4567 · vassgabor@electroleda.hu">
+    <meta name="theme-color" content="#0EA5E9">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta property="og:title" content="Villanyszerelés – Vass Gábor E. V.">
+    <meta property="og:description"
+        content="Gyors, megbízható villanyszerelő városi környezetben. Hívás: +36 30 123 4567">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/plogo.png">
+    <meta property="og:locale" content="hu_HU">
+    <meta name="twitter:card" content="summary">
+    <title>Villanyszerelés – Vass Gábor E. V.</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap&family=Roboto&family=Inter&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -15,23 +29,29 @@
     <link rel="stylesheet" href="styles.welcome.css">
     <link rel="stylesheet" href="styles.services.css">
     <link rel="stylesheet" href="styles.contacts.css">
+    <link rel="stylesheet" href="styles.car.css">
+    <link rel="stylesheet" href="styles.ref.css">
+
+    <script
+        type="application/ld+json">{"@context": "https://schema.org", "@type": "Electrician", "name": "Vass Gábor E. V.", "email": "mailto:vassgabor@electroleda.hu", "telephone": "+36 30 123 4567"}</script>
 </head>
 
 <body>
     <header>
         <div class="logo-area">
-            <div class="logo-desc-wrapper">
-                <h3 class="logo-desc">Vass Gábor</h3>
+            <!-- <div class="logo-desc-wrapper">
+                <h3 class="logo-desc">Vass Gábor E. V.</h3>
+                <h3 class="logo-desc">Villanyszerelés</h3>
                 <h3 class="logo-desc tel">
                     <a href="tel:+36301234567" style="text-decoration: none; color: inherit;">
                         +36-30/123-4567
                     </a>
                 </h3>
-            </div>
+            </div> -->
         </div>
 
         <div class="navigation-area">
-            <i id="menu" class="bi bi-list"></i>
+            <i id="menu" class="bi bi-list" role="button" aria-label="Menü" aria-expanded="false" tabindex="0"></i>
             <div class="nbar-wrapper">
                 <div class="nbar">
                     <ul>
@@ -47,199 +67,310 @@
         </div>
     </header>
 
-    <div class="grid-container">
-        <section class="welcome bgd-bxs-card">
-            <!-- <h3 class="heading">
-                Villanyszerelés biztonsággal és precizitással
-            </h3> -->
-            <div class="welcome-message">
-                <div class="centered description">
-                    <h3>
-                        <strong>Üdvözlöm!</strong>
-                    </h3>
-                </div>
-                <br>
-                <div class="justified description  testszoveg">
-                    <strong>
-                        Vass Gábor vagyok.
-                    </strong>
-                    Egyéni vállalkozóként több éve foglalkozom villanyszereléssel lakossági
-                    és ipari területen egyaránt. Vállalom új
-                    rendszerek kiépítését, meglévő hálózatok karbantartását, hibakeresést és javítását. Munkámat mindig
-                    pontosan, a vonatkozó szabványok és jogszabályok szerint végzem. Célom a gyors, biztonságos és
-                    szakszerű
-                    munkavégzés, ügyfélközpontú
-                    hozzáállással.
-                </div>
-            </div>
-            <div class="phone-only">
-                <div class="welcome-contacts-wrapper">
-                    <a href="tel:+36123456789" class="welcome-cont-btn">
-                        <i class="bi bi-telephone"></i>
-                        Keressen telefonon!
-                        <i class="bi bi-hand-index-thumb"></i></a>
 
-                    <a href="mailto:info@example.com" class="welcome-cont-btn">
-                        <i class="bi bi-envelope"></i>
-                        Keressen e-mailben!
-                        <i class="bi bi-hand-index-thumb"></i></a>
-                </div>
-            </div>
-        </section>
-        <section class="services bgd-bxs-card">
-            <h3 class="heading">
-                Szolgáltatások
-            </h3>
-            <div class="services-list">
-                <div class="services-list-element">
-                    <h5 class="service flextest"><img src="./images/icons/general-electric.png" alt="Villámvédelem ikon"
-                            class="service-icon">
-                        <span>Villanyszerelés</span>
-                    </h5>
-                    <p class="hiddensection service-description shown">
-                        Komplett villanyszerelési munkák lakossági és ipari környezetben, beleértve a lakáselosztók
-                        szerelését, a földelési rendszerek kialakítását és a hálózati kiépítést.
-                    </p>
-                </div>
-                <div class="services-list-element">
-                    <h5 class="service flextest"><img src="./images/icons/electric-touch.png" alt="Villámvédelem ikon"
-                            class="service-icon">
-                        <span>Villamos biztonsági felülvizsgálat</span>
-                    </h5>
-                    <p class="hiddensection service-description  shown">
-                        Az elektromos rendszerek időszakos ellenőrzése jogszabályi előírások alapján kötelező, amelyet
-                        az
-                        OTSZ (Országos Tűzvédelmi Szabályzat), valamint a NFM rendelet (40/2017. (XII. 4.) NGM rendelet)
-                        szabályoz. A vizsgálat célja az érintésvédelem, túlfeszültség elleni védelem és a földelési
-                        rendszer
-                        megfelelőségének biztosítása.
-                    </p>
-                </div>
-                <div class="services-list-element">
-                    <h5 class="service flextest"><img src="./images/icons/lightning-protection.png"
-                            alt="Villámvédelem ikon" class="service-icon">
-                        <span>Villámvédelmi felülvizsgálat</span>
-                    </h5>
-                    <p class="hiddensection service-description shown">
-                        A villámvédelmi rendszerek ellenőrzése a meglévő villámhárítók, levezetők és földelések
-                        állapotának
-                        vizsgálatával történik, biztosítva az épületek és elektromos rendszerek védelmét villámcsapás
-                        esetén.
+    <main id="content" tabindex="-1">
+        <div class="grid-container">
+            <section class="opening-car bgd-bxs-card">
+                <div class="carousel-container">
+                    <div class="carousel-slide" id="carouselSlide">
+                        <div class="carousel-item">
+                            <!-- <div class="icon">⚡</div> -->
+                            <h2>Épp egy megbízható szakit keres?</h2>
+                            <h3>Megtalálta.</h3>
+                            <p>Vegye fel velem a kapcsolatot!</p>
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Problémát észlelt az elektromos hálózatban?</h2>
+                            <h3>Keressen fel!</h3>
+                            <p>Egyeztessünk időpontot, és megkeresem a hibát!</p>
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Bővítené meglévő elektromos hálózatát?</h2>
+                            <h3>Jó helyen jár!</h3>
+                            <p>Új rendszer kiépítését, meglévő karbantartását is vállalom!</p>
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Kérdése van?</h2>
+                            <h3>Ne habozzon! Tegye fel!</h3>
+                            <p>A lehető leghamarabb igyekszem választ adni.</p>
+                        </div>
+                    </div>
 
-                    </p>
-                </div>
-                <div class="services-list-element">
-                    <h5 class="service flextest"><img src="./images/icons/explosion-review.png" alt="Villámvédelem ikon"
-                            class="service-icon">
-                        <span>Robbanásveszélyes helyek felülvizsgálata</span>
-                    </h5>
-                    <p class="hiddensection service-description shown">
-                        Bizonyos ipari területeken különleges szabványoknak kell megfelelni az elektromos berendezések
-                        kialakításakor. A felülvizsgálat során biztosítom, hogy az elektromos hálózat és berendezések
-                        megfeleljenek az ATEX előírásoknak, minimálisra csökkentve a gyújtószikra és statikus
-                        elektromosság kockázatát.
-                    </p>
-                </div>
-                <div class="services-list-element">
-                    <h5 class="service flextest"><img src="./images/icons/report-writing.png" alt="Villámvédelem ikon"
-                            class="service-icon">
-                        <span>Jegyzőkönyv készítés</span>
-                    </h5>
-                    <p class="hiddensection service-description shown">
-                        Minden felülvizsgálati és szerelési munkáról pontos és hivatalos jegyzőkönyvet készítek, amely
-                        megfelel a szabványoknak és jogszabályi előírásoknak.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="contacts bgd-bxs-card">
-            <div class="contacts-maindiv-g">
-                <div class="pinfo-h">
-                    <h5>Vass Gábor</h5>
-                </div>
+                    <div class="nav-btns">
+                        <button id="prev">&#10094;</button>
+                        <button id="next">&#10095;</button>
+                    </div>
 
-                <img src="./images/plogo.png" alt="Electrician">
+                    <div class="dots" id="carouselDots"></div>
+                </div>
+            </section>
+            <section class="welcome bgd-bxs-card">
+                <h3 class="intro-header">
+                    Bemutatkozás
+                </h3>
+                <div class="ppic">
+                    <img src="./images/ppic.png">
+                </div>
+                <div class="welcome-message">
+                    <div class="justified description  testszoveg">
+                        <strong>
+                            Vass Gábor
+                        </strong>
+                        vagyok. Főként villanyszereléssel foglalkozom lakossági
+                        és ipari területen egyaránt. Vállalom új
+                        rendszerek kiépítését, meglévő hálózatok karbantartását, hibakeresést és javítását.
+                        <br>
+                        <br>
+                        Munkámat
+                        mindig a vonatkozó szabványok és jogszabályok szerint pontosan és precízen végzem. Célom a
+                        gyors, biztonságos és
+                        szakszerű
+                        munkavégzés a Tisztelt Megrendelő igényeinek figyelembe vételével.
+                        <br>
+                        <br>
+                        Tudom, milyen nehéz manapság valóban megbízható és hozzáértő mestert találni, legyen szó akár
+                        milyen munkáról.
+                        Éppen ezért ajánlom szolgáltatásaim azoknak, akik egy szavahihető, pontos, precíz szakembert
+                        keresnek.
+                        <br>
+                        <br>
+                        Vegye fel velem a kapcsolatot, a lenti lehetőségek egyikén!
+                        <br>
+                        <br>
+                        <div class="info-row" style="border-radius: 1rem;">
+                            <span>
+                                Vass Gábor
+                            </span>
+                            <span>
+                                <a href="tel:+36301234567">+36-30/123-4567</a>
+                            </span>
 
-                <div class="pcontacts-g">
-                    <div class="pinfo-g pinfo-d">
-                        <i class="bi bi-telephone"></i>
+                            <span>
+                                <a href="mailto:vassgabor@electroleda.hu">vassgabor@electroleda.hu</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="phone-only">
+                    <div class="welcome-contacts-wrapper">
+                        <a href="tel:+36123456789" class="welcome-cont-btn">
+                            <i class="bi bi-telephone"></i>
+                            Keressen telefonon!
+                            <i class="bi bi-hand-index-thumb"></i></a>
 
-                        <!-- Clickable only on mobile -->
-                        <a href="tel:+36301234567" class="mobile-tel">
-                            +36-30/123-4567
-                        </a>
-
-                        <!-- Non-clickable on desktop -->
-                        <p class="desktop-tel">
-                            +36-30/123-4567
+                        <a href="mailto:info@example.com" class="welcome-cont-btn">
+                            <i class="bi bi-envelope"></i>
+                            Keressen e-mailben!
+                            <i class="bi bi-hand-index-thumb"></i></a>
+                    </div>
+                </div>
+            </section>
+            <section class="services bgd-bxs-card">
+                <h3 class="heading">
+                    Szolgáltatások
+                </h3>
+                <div class="services-list">
+                    <div class="services-list-element">
+                        <h5 class="service flextest"><img decoding="async" loading="lazy"
+                                src="./images/icons/general-electric.png" alt="Villámvédelem ikon" class="service-icon">
+                            <span>Villanyszerelés</span>
+                        </h5>
+                        <p class="hiddensection service-description shown">
+                            Komplett villanyszerelési munkák lakossági és ipari környezetben, beleértve a lakáselosztók
+                            szerelését, a földelési rendszerek kialakítását és a hálózati kiépítést.
                         </p>
                     </div>
-                    <div class="pinfo-g pinfo-d">
-                        <i class="bi bi-envelope"></i>
-                        <a href="mailto:vassgabor@electroleda.hu" class="mobile-email">
-                            vassgabor@electroleda.hu
-                        </a>
+                    <div class="services-list-element">
+                        <h5 class="service flextest"><img decoding="async" loading="lazy"
+                                src="./images/icons/electric-touch.png" alt="Villámvédelem ikon" class="service-icon">
+                            <span>Villamos biztonsági felülvizsgálat</span>
+                        </h5>
+                        <p class="hiddensection service-description  shown">
+                            Az elektromos rendszerek időszakos ellenőrzése jogszabályi előírások alapján kötelező,
+                            amelyet
+                            az
+                            OTSZ (Országos Tűzvédelmi Szabályzat), valamint a NFM rendelet (40/2017. (XII. 4.) NGM
+                            rendelet)
+                            szabályoz. A vizsgálat célja az érintésvédelem, túlfeszültség elleni védelem és a földelési
+                            rendszer
+                            megfelelőségének biztosítása.
+                        </p>
                     </div>
-                    <div class="pinfo-g pinfo-d">
-                        <i class="bi bi-geo-alt"></i>
-                        <p>A világon bárhol és környéke</p>
+                    <div class="services-list-element">
+                        <h5 class="service flextest"><img decoding="async" loading="lazy"
+                                src="./images/icons/lightning-protection.png" alt="Villámvédelem ikon"
+                                class="service-icon">
+                            <span>Villámvédelmi felülvizsgálat</span>
+                        </h5>
+                        <p class="hiddensection service-description shown">
+                            A villámvédelmi rendszerek ellenőrzése a meglévő villámhárítók, levezetők és földelések
+                            állapotának
+                            vizsgálatával történik, biztosítva az épületek és elektromos rendszerek védelmét
+                            villámcsapás
+                            esetén.
+
+                        </p>
                     </div>
-                    <div class="pinfo-g pinfo-d">
-                        <i class="bi bi-award"></i>
-                        <p>Villanyszerelő</p>
+                    <div class="services-list-element">
+                        <h5 class="service flextest"><img decoding="async" loading="lazy"
+                                src="./images/icons/explosion-review.png" alt="Villámvédelem ikon" class="service-icon">
+                            <span>Robbanásveszélyes helyek felülvizsgálata</span>
+                        </h5>
+                        <p class="hiddensection service-description shown">
+                            Bizonyos ipari területeken különleges szabványoknak kell megfelelni az elektromos
+                            berendezések
+                            kialakításakor. A felülvizsgálat során biztosítom, hogy az elektromos hálózat és
+                            berendezések
+                            megfeleljenek az ATEX előírásoknak, minimálisra csökkentve a gyújtószikra és statikus
+                            elektromosság kockázatát.
+                        </p>
                     </div>
-                    <div class="pinfo-g pinfo-d">
-                        <i class="bi bi-award"></i>
-                        <p>Villámvédelmi felülvizsgáló</p>
+                    <div class="services-list-element">
+                        <h5 class="service flextest"><img decoding="async" loading="lazy"
+                                src="./images/icons/report-writing.png" alt="Villámvédelem ikon" class="service-icon">
+                            <span>Jegyzőkönyv készítés</span>
+                        </h5>
+                        <p class="hiddensection service-description shown">
+                            Minden felülvizsgálati és szerelési munkáról pontos és hivatalos jegyzőkönyvet készítek,
+                            amely
+                            megfelel a szabványoknak és jogszabályi előírásoknak.
+                        </p>
                     </div>
                 </div>
-            </div>
-            <div class="social-list">
-                <ul>
-                    <li>
-                        <a class="social-link" href="https://youtube.com" target="_blank" aria-label="YouTube">
-                            <i class="bi bi-youtube"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="social-link" href="https://tiktok.com" target="_blank" aria-label="TikTok">
-                            <i class="bi bi-tiktok"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="social-link" href="https://facebook.com" target="_blank" aria-label="Facebook">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="social-link" href="https://instagram.com" target="_blank" aria-label="Instagram">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="contacts-buttons-wrapper">
-                <a href="tel:+36123456789" class="cont-btn">
-                    <i class="bi bi-telephone"></i>
-                    Keressen telefonon!
-                    <i class="bi bi-hand-index-thumb"></i></a>
+                <div class="info-row">
+                    <span>
+                        Vass Gábor
+                    </span>
+                    <span>
+                        <a href="tel:+36301234567">+36-30/123-4567</a>
+                    </span>
+                    <span>
+                        <a href="mailto:vassgabor@electroleda.hu">vassgabor@electroleda.hu</a>
+                    </span>
+                </div>
+            </section>
+            <section class="references-car bgd-bxs-card">
+                <h3 class="heading">
+                    Referenciáim
+                </h3>
+                <div class="carousel-container">
+                    <div class="carousel-slide" id="carouselSlide2">
+                        <div class="carousel-item">
+                            <img src="./images/1.jpeg">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/2.jpeg">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/a.jpeg">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/c.jpeg">
+                        </div>
+                    </div>
+                    <div class="nav-btns">
+                        <button id="prev2">&#10094;</button>
+                        <button id="next2">&#10095;</button>
+                    </div>
 
-                <a href="mailto:info@example.com" class="cont-btn">
-                    <i class="bi bi-envelope"></i>
-                    Keressen e-mailben!
-                    <i class="bi bi-hand-index-thumb"></i></a>
-            </div>
-        </section>
-    </div>
+                    <div class="dots" id="carouselDots2"></div>
+                </div>
+            </section>
+            <section class="contacts bgd-bxs-card">
+                <div class="contacts-maindiv-g">
+                    <div class="pinfo-h">
+                        <h5>Vass Gábor</h5>
+                    </div>
+
+                    <img decoding="async" loading="lazy" src="./images/plogo.png" alt="Electrician">
+
+                    <div class="pcontacts-g">
+                        <div class="pinfo-g pinfo-d">
+                            <i class="bi bi-telephone"></i>
+
+                            <!-- Clickable only on mobile -->
+                            <a href="tel:+36301234567" class="mobile-tel">
+                                +36-30/123-4567
+                            </a>
+
+                            <!-- Non-clickable on desktop -->
+                            <p class="desktop-tel">
+                                +36-30/123-4567
+                            </p>
+                        </div>
+                        <div class="pinfo-g pinfo-d">
+                            <i class="bi bi-envelope"></i>
+                            <a href="mailto:vassgabor@electroleda.hu" class="mobile-email">
+                                vassgabor@electroleda.hu
+                            </a>
+                        </div>
+                        <div class="pinfo-g pinfo-d">
+                            <i class="bi bi-geo-alt"></i>
+                            <p>A világon bárhol és környéke</p>
+                        </div>
+                        <div class="pinfo-g pinfo-d">
+                            <i class="bi bi-award"></i>
+                            <p>Villanyszerelő</p>
+                        </div>
+                        <div class="pinfo-g pinfo-d">
+                            <i class="bi bi-award"></i>
+                            <p>Villámvédelmi felülvizsgáló</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="phone-only">
+                    <div class="contacts-buttons-wrapper">
+                        <a href="tel:+36123456789" class="cont-btn">
+                            <i class="bi bi-telephone"></i>
+                            Keressen telefonon!
+                            <i class="bi bi-hand-index-thumb"></i></a>
+
+                        <a href="mailto:info@example.com" class="cont-btn">
+                            <i class="bi bi-envelope"></i>
+                            Keressen e-mailben!
+                            <i class="bi bi-hand-index-thumb"></i></a>
+                    </div>
+                </div> -->
+                <div class="social-list">
+                    <ul>
+                        <li>
+                            <a class="social-link" href="https://youtube.com" target="_blank" aria-label="YouTube">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-link" href="https://tiktok.com" target="_blank" aria-label="TikTok">
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-link" href="https://facebook.com" target="_blank" aria-label="Facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-link" href="https://instagram.com" target="_blank" aria-label="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
     <footer>
         <div>
             <p>&copy Vass Gábor E. V.</p>
             <p>&copy website by br0k3n</p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script src="scripts.js"></script>
+
+    <a class="call-button" href="tel:+36301234567" aria-label="Hívás">
+        <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+        <span>Hívás</span>
+    </a>
+
 </body>
 
 </html>
